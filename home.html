@@ -14,7 +14,6 @@
  
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -36,16 +35,35 @@
     </div>
   </div>
 </nav>
-
 <div class="jumbotron text-center">
   <h1>HR<em>Gateway</em></h1>
   <p>We got your Back!</p>
   <form class="form-inline">
-   
-    <button id= type="button" class="btn btn-lg btn-info" >Login..</button>
+    <button type="button" class="btn btn-lg btn-info" onclick="document.getElementById('modal1').style.display='block'" >Login..</button>
   </form>
 </div>
+<!-- login modal -->
+<div id="modal1" class="modal">
+  
+  <form class="modal-content animate" action="Homepage.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal1').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
 
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required />
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required />
+      <input type="checkbox" checked="checked"> Remember me<br/>
+        
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      <button type="submit">Login</button>
+      
+    </div>
+  </form>
+</div>
 <!-- Container (menu1) -->
 <div id="menu1" class="container">
   <div class="row">
@@ -72,7 +90,6 @@
   </div>
   </div>
 </div>
-
 <!-- Container (menu2) -->
 <div id="menu2" class="container text-center">
   <h2>menu2</h2>
@@ -100,7 +117,6 @@
     </div>
   </div>
 </div>
-
 <!-- Container (Portfolio Section) -->
 <div id="menu3" class="container-fluid text-center bg-grey">
 <div class="container">
@@ -129,7 +145,6 @@
     </div>
     </div>
   </div><br>
-  
   <h2>slider</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -151,7 +166,6 @@
         <h4>"carousel3"<br><span style="font-style:normal;">Description</span></h4>
       </div>
     </div>
-
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -163,7 +177,6 @@
     </a>
   </div>
 </div>
-
 <!-- menu4-->
 <div id="menu4" class="container">
   <div class="text-center">
@@ -218,7 +231,6 @@
     </div>
   </div>
 </div>
-
 <!-- Container (menu 5 Contact Section) -->
 <div id="menu5" class="container-fluid bg-grey">
 <div class="container">
@@ -242,15 +254,11 @@
   </div>
   </div>
 </div>
-
-
-
-
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Footer In Progress</p>
+  <p>Footer</p>
 </footer>
 
 </body>
